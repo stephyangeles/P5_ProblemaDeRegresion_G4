@@ -79,4 +79,4 @@ EXPOSE 8000
 #RUN chmod +x /start.sh
 #CMD ["/start.sh"]
 #CMD service cron start && uvicorn main:app --host 0.0.0.0 --port 8000 --reload
-CMD ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port 8000 --reload"]
+CMD ["sh", "-c", "uvicorn regression.main:app --host 0.0.0.0 --port 8000 --reload"]
