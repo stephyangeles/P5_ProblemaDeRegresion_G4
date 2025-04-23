@@ -1,0 +1,22 @@
+
+services:
+  fastapi:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    container_name: Coches_ML
+
+
+  test:
+    build: .
+    container_name: Coches_ML-TEST
+    environment:
+      - LOG_FILE=/log.txt
+      - PYTHONPATH=/app  # Agregar la ruta del código fuente
+    volumes:
+      - .:/app
+      - ./tests:/tests
+    command: pytest tests/
+    
