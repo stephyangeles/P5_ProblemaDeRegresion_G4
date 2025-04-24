@@ -7,6 +7,7 @@ from regression.core.config import settings
 import regression.core.lw_log as log
 from catboost import CatBoostClassifier, CatBoostRegressor
 import pandas as pd
+import pickle
 from regression.predictor import predict_price, load_form_data
 
 
@@ -26,6 +27,10 @@ app.mount("/static", StaticFiles(directory="regression/static"), name="static")
 templates = Jinja2Templates(directory="regression/templates")
 # Cargar modelo, scaler y columnas
 
+with open("regression/data/brands.pkl", "rb") as f:
+    brands = pickle.load(f)
+with open("regression/data/models.pkl", "rb") as f:
+    model = pickle.load(f)
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -39,8 +44,9 @@ def read_root( request: Request):
     return templates.TemplateResponse(request,
         "index.html",
           {
+            "request": request,
             "lectura": lectura_log,
-            "request": request
+            "brands": brands
         }
     )
 
@@ -66,15 +72,17 @@ async def predict(data):
         price = predict_price(input_data)
         
         # Devolver el resultado
+        print(f"Predicción: { round(price[0], 2)}")
+        log.write_log(f"Predicción: {price}")   
         return {
             "predicted_price": float(price),
             "formatted_price": f"${price:,.2f}"
         }
     except Exception as e:
+        log.write_log(f"❌ Error: {str(e)}") 
         return {"error": str(e)}
 
 @app.get("/models/{brand}")
 async def get_models_by_brand(brand: str):
-    if brand in form_data["categories"]["models_by_brand"]:
-        return {"models": form_data["categories"]["models_by_brand"][brand]}
-    return {"models": []}
+    modelos = model[model['brand'] == brand]['model'].unique().tolist()
+    return JSONResponse(content={"modelos": modelos})
