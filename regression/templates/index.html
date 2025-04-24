@@ -6,8 +6,41 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>A {{ element }}</h1>
+    <h1>CAR</h1>
+    
     <button class="btn" onclick="window.modal_log.showModal();">Ver Log´s</button>
+
+    <form id="car-form">
+      <input type="number" name="model_year" placeholder="Año del modelo" required>
+      <input type="number" name="milage" placeholder="Kilometraje" required>
+      <select name="accident">
+        <option value="false">Sin accidentes</option>
+        <option value="true">Con accidentes</option>
+      </select>
+       
+      <select name="clean_title">
+        <option value="true">Título limpio</option>
+        <option value="false">Título con problemas</option>
+      </select>
+      <input type="number" name="horsepower" placeholder="Potencia (HP)" step="0.1" required>
+      <input type="number" name="engine_L" placeholder="Motor (Litros)" step="0.1" required>
+      <select name="brand" id="brand" onchange="cargarModelos()">
+        {% for brand in brands %}
+            <option value="{{ brand }}">{{ brand }}</option>
+        {% endfor %}
+      </select>
+      <label for="model">Modelo:</label>
+        <select id="model" name="model" required>
+          <option value="">Selecciona un modelo</option>
+        </select>
+      <input type="text" name="fuel_type" placeholder="Tipo de combustible" required>
+      <input type="text" name="transmission" placeholder="Transmisión" required>
+      <button type="submit">Predecir Precio</button>
+    </form>
+    <h2 id="result">
+      
+    </h2>
+
     <dialog id="modal_log" class="modal_menu">
         <div>
           <h2>Acciones:</h2>
@@ -16,5 +49,34 @@
         </div>
         <pre>{{ lectura }}</pre>
       </dialog>
+
+      <script>
+        const form = document.getElementById('car-form');
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          const formData = new FormData(form);
+          const data = Object.fromEntries(formData.entries());
+    
+          // Convertir strings a boolean/number según corresponda
+          data.accident = data.accident === "true";
+          data.clean_title = data.clean_title === "true";
+          data.model_year = parseInt(data.model_year);
+          data.milage = parseInt(data.milage);
+          data.horsepower = parseFloat(data.horsepower);
+          data.engine_L = parseFloat(data.engine_L);
+    
+          const response = await fetch('/predict', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+          });
+    
+          const result = await response.json();
+          document.getElementById('result').textContent = 
+            `💰 Precio estimado: ${result.predicted_price} €`;
+        });
+      </script>
 </body>
+
+
 </html>
