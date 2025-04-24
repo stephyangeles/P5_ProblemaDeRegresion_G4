@@ -17,6 +17,5 @@ services:
       - PYTHONPATH=/app/regression  # Agregar la ruta del código fuente
     volumes:
       - .:/app
-      - ./tests:/tests
     command: pytest regression/tests
     
