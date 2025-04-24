@@ -28,7 +28,9 @@ def predict_price(input_data):
         float: Precio predicho
     """
     model = load_model()
-    
+    categorical_columns = ["brand", "model", "fuel_type", "accident"]
+    for col in categorical_columns:
+        input_data[col] = input_data[col].astype(str)
     # Realizar la predicción
     prediction = model.predict(input_data)
     

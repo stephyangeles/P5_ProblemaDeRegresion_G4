@@ -9,5 +9,5 @@ class Settings:
         self.version = "0.0.1"
         self.description = "Regression model for predicting car prices"
 
-        self.api_prefix = "/api/v1"
+        self.api_prefix = "/api"
 settings = Settings()

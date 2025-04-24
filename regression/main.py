@@ -7,7 +7,10 @@ from regression.core.config import settings
 import regression.core.lw_log as log
 from catboost import CatBoostClassifier, CatBoostRegressor
 import pandas as pd
-import pickle
+from typing import Optional, List
+import numpy as np
+import json
+from pydantic import BaseModel
 from regression.predictor import predict_price, load_form_data
 
 
@@ -26,32 +29,40 @@ app.mount("/static", StaticFiles(directory="regression/static"), name="static")
 #Configurar Jinja2 para las plantillas HTML
 templates = Jinja2Templates(directory="regression/templates")
 # Cargar modelo, scaler y columnas
+# Modelo para la solicitud de predicción
+class PredictionRequest(BaseModel):
+    brand: str
+    model: str
+    model_year: int
+    milage: int
+    fuel_type: str
+    engine_L: Optional[float] = None
+    horsepower: Optional[float] = None
+    accident: str
+    clean_title: int
 
-with open("regression/data/brands.pkl", "rb") as f:
-    brands = pickle.load(f)
-with open("regression/data/models.pkl", "rb") as f:
-    model = pickle.load(f)
 
-
+# Ruta principal - Renderiza el formulario HTML
 @app.get("/", response_class=HTMLResponse)
-def read_root( request: Request):
-    try:
-        lectura_log = log.leer_archivo() 
-        log.write_log(f"✅ Datos recuperados correctamente")
-    except Exception as e:
-        log.write_log(f"❌ Error al recuperar datos {e}")
-        print(f"❌ Error al recuperar algo {e}")
+async def read_root(request: Request):
     return templates.TemplateResponse(request,
-        "index.html",
-          {
-            "request": request,
-            "lectura": lectura_log,
-            "brands": brands
+        "index.html", 
+        {
+            "request": request, 
+            "form_data": json.dumps(form_data)
         }
     )
 
-@app.post("/predict")
-async def predict(data):
+# Endpoint para obtener los modelos de una marca específica
+@app.get(settings.api_prefix+"/models/{brand}")
+async def get_models_by_brand(brand: str):
+    if brand in form_data["categories"]["models_by_brand"]:
+        return {"models": form_data["categories"]["models_by_brand"][brand]}
+    return {"models": []}
+
+# Endpoint para la predicción
+@app.post(settings.api_prefix+"/predict")
+async def predict(data: PredictionRequest):
     try:
         # Crear un DataFrame con los datos de entrada
         input_data = pd.DataFrame({
@@ -72,17 +83,9 @@ async def predict(data):
         price = predict_price(input_data)
         
         # Devolver el resultado
-        print(f"Predicción: { round(price[0], 2)}")
-        log.write_log(f"Predicción: {price}")   
         return {
             "predicted_price": float(price),
             "formatted_price": f"${price:,.2f}"
         }
     except Exception as e:
-        log.write_log(f"❌ Error: {str(e)}") 
         return {"error": str(e)}
-
-@app.get("/models/{brand}")
-async def get_models_by_brand(brand: str):
-    modelos = model[model['brand'] == brand]['model'].unique().tolist()
-    return JSONResponse(content={"modelos": modelos})
