@@ -1,15 +1,75 @@
-[2025-04-24 07:21:49.786851] Regression 0.0.1 started
-[2025-04-24 07:21:49.787945] Regression 0.0.1 started
-[2025-04-24 07:24:03.810818] 💹Regression 0.0.1 started
-[2025-04-24 07:33:43.677675] 💹Regression 0.0.1 started
-[2025-04-24 07:36:03.040898] 💹Regression 0.0.1 started
-[2025-04-24 07:36:03.186481] 💹Regression 0.0.1 started
-[2025-04-24 07:36:03.201640] ✅ Datos recuperados correctamente
-[2025-04-24 07:37:13.484656] 💹Regression 0.0.1 started
-[2025-04-24 07:37:13.658891] ✅ Datos recuperados correctamente
-[2025-04-24 07:37:13.697096] 💹Regression 0.0.1 started
-[2025-04-24 07:38:19.748389] 💹Regression 0.0.1 started
-[2025-04-24 07:38:20.029675] 💹Regression 0.0.1 started
-[2025-04-24 07:38:20.229920] ✅ Datos recuperados correctamente
-[2025-04-24 07:38:39.955010] ✅ Datos recuperados correctamente
-[2025-04-24 07:39:20.128509] ✅ Datos recuperados correctamente
+[2025-04-24 08:11:47.236927] ✅ Datos recuperados correctamente
+[2025-04-24 08:32:26.814368] 💹Regression 0.0.1 started
+[2025-04-24 08:32:26.864059] 💹Regression 0.0.1 started
+[2025-04-24 08:33:44.360314] 💹Regression 0.0.1 started
+[2025-04-24 08:34:08.180758] 💹Regression 0.0.1 started
+[2025-04-24 08:34:21.059015] 💹Regression 0.0.1 started
+[2025-04-24 08:34:40.064309] 💹Regression 0.0.1 started
+[2025-04-24 08:58:44.814822] 💹Regression 0.0.1 started
+[2025-04-24 08:58:44.820208] 💹Regression 0.0.1 started
+[2025-04-24 09:05:00.122740] 💹Regression 0.0.1 started
+[2025-04-24 09:05:00.161695] 💹Regression 0.0.1 started
+[2025-04-24 10:09:54.300292] 💹Regression 0.0.1 started
+[2025-04-24 10:09:54.337562] 💹Regression 0.0.1 started
+[2025-04-24 10:35:42.187968] 💹Regression 0.0.1 started
+[2025-04-24 10:35:42.188242] 💹Regression 0.0.1 started
+[2025-04-24 10:35:42.901852] ✅ Datos recuperados correctamente
+[2025-04-24 10:54:19.299530] 💹Regression 0.0.1 started
+[2025-04-24 10:54:19.299911] 💹Regression 0.0.1 started
+[2025-04-24 10:54:20.064573] ✅ Datos recuperados correctamente
+[2025-04-24 10:54:34.394146] ✅ Datos recuperados correctamente
+[2025-04-24 10:58:42.823538] ✅ Datos recuperados correctamente
+[2025-04-24 10:59:03.348223] ✅ Datos recuperados correctamente
+[2025-04-24 11:00:37.519835] ✅ Datos recuperados correctamente
+[2025-04-24 11:02:28.198436] ✅ Datos recuperados correctamente
+[2025-04-24 11:02:30.604069] ✅ Datos recuperados correctamente
+[2025-04-24 11:05:51.253645] ✅ Datos recuperados correctamente
+[2025-04-24 11:06:12.284097] ✅ Datos recuperados correctamente
+[2025-04-24 11:06:23.073248] ✅ Datos recuperados correctamente
+[2025-04-24 11:07:28.112131] ✅ Datos recuperados correctamente
+[2025-04-24 11:08:07.343050] ✅ Datos recuperados correctamente
+[2025-04-24 11:08:14.131089] ✅ Datos recuperados correctamente
+[2025-04-24 11:08:50.537484] 💹Regression 0.0.1 started
+[2025-04-24 11:08:50.591990] 💹Regression 0.0.1 started
+[2025-04-24 11:08:50.769825] ❌ Error al recuperar datos [Errno 2] No such file or directory: '/regression/models/catboost_best_model.pkl'
+[2025-04-24 11:09:50.943175] 💹Regression 0.0.1 started
+[2025-04-24 11:09:51.048610] 💹Regression 0.0.1 started
+[2025-04-24 11:09:51.445180] ❌ Error al recuperar datos 'CatBoostRegressor' object has no attribute 'feature_count_'
+[2025-04-24 11:11:20.148919] ❌ Error al recuperar datos 'CatBoostRegressor' object has no attribute 'feature_count_'
+[2025-04-24 11:13:23.605522] ❌ Error al recuperar datos 'CatBoostRegressor' object has no attribute 'feature_count_'
+[2025-04-24 11:14:27.130411] ❌ Error al recuperar datos 'CatBoostRegressor' object has no attribute 'feature_count_'
+[2025-04-24 11:14:59.420378] ❌ Error al recuperar datos 'CatBoostRegressor' object has no attribute 'feature_count_'
+[2025-04-24 11:16:00.031632] ❌ Error al recuperar datos 'CatBoostRegressor' object has no attribute 'feature_count_'
+[2025-04-24 11:16:17.503004] ❌ Error al recuperar datos 'CatBoostRegressor' object has no attribute 'feature_count_'
+[2025-04-24 11:17:15.863995] 💹Regression 0.0.1 started
+[2025-04-24 11:17:15.986920] 💹Regression 0.0.1 started
+[2025-04-24 11:18:13.531916] 💹Regression 0.0.1 started
+[2025-04-24 11:18:13.588152] 💹Regression 0.0.1 started
+[2025-04-24 11:18:14.049721] ✅ Datos recuperados correctamente
+[2025-04-24 11:18:26.653886] ✅ Datos recuperados correctamente
+[2025-04-24 11:19:43.358608] 💹Regression 0.0.1 started
+[2025-04-24 11:19:43.739076] 💹Regression 0.0.1 started
+[2025-04-24 11:19:43.848852] ✅ Datos recuperados correctamente
+[2025-04-24 11:19:47.482956] ✅ Datos recuperados correctamente
+[2025-04-24 11:54:17.397645] ✅ Datos recuperados correctamente
+[2025-04-24 11:55:00.030055] 💹Regression 0.0.1 started
+[2025-04-24 11:55:00.125732] 💹Regression 0.0.1 started
+[2025-04-24 11:55:00.789565] ✅ Datos recuperados correctamente
+[2025-04-24 11:56:13.536978] ✅ Datos recuperados correctamente
+[2025-04-24 11:56:27.989064] ✅ Datos recuperados correctamente
+[2025-04-24 11:57:10.595674] ✅ Datos recuperados correctamente
+[2025-04-24 11:57:28.184498] ✅ Datos recuperados correctamente
+[2025-04-24 11:57:54.375318] ✅ Datos recuperados correctamente
+[2025-04-24 11:58:56.112410] ✅ Datos recuperados correctamente
+[2025-04-24 11:59:55.373147] ✅ Datos recuperados correctamente
+[2025-04-24 12:00:46.436361] 💹Regression 0.0.1 started
+[2025-04-24 12:00:46.508507] 💹Regression 0.0.1 started
+[2025-04-24 12:03:43.489918] 💹Regression 0.0.1 started
+[2025-04-24 12:03:43.808843] 💹Regression 0.0.1 started
+[2025-04-24 12:04:58.166108] 💹Regression 0.0.1 started
+[2025-04-24 12:04:58.336019] 💹Regression 0.0.1 started
+[2025-04-24 12:04:58.701048] ✅ Datos recuperados correctamente
+[2025-04-24 12:14:52.826831] 💹Regression 0.0.1 started
+[2025-04-24 12:14:53.156148] ✅ Datos recuperados correctamente
+[2025-04-24 12:14:53.174758] 💹Regression 0.0.1 started
+[2025-04-24 12:15:29.061239] ✅ Datos recuperados correctamente

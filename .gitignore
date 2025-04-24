@@ -2,6 +2,6 @@ venv
 .venv
 .env
 .vercel
-cosas.txt
+requirements.txt
 
 

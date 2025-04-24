@@ -5,6 +5,9 @@ from fastapi.responses import HTMLResponse, JSONResponse, FileResponse
 from fastapi.templating import Jinja2Templates
 from regression.core.config import settings
 import regression.core.lw_log as log
+from catboost import CatBoostClassifier, CatBoostRegressor
+import pandas as pd
+import pickle
 
 
 
@@ -20,6 +23,11 @@ log.write_log("💹" + settings.proyect_name + " " + settings.version + " starte
 app.mount("/static", StaticFiles(directory="regression/static"), name="static")
 #Configurar Jinja2 para las plantillas HTML
 templates = Jinja2Templates(directory="regression/templates")
+# Cargar modelo, scaler y columnas
+
+with open(settings.model_path, "rb") as f:
+    model_cat = pickle.load(f)
+
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -34,7 +42,6 @@ def read_root( request: Request):
         "index.html",
           {
             "lectura": lectura_log,
-            "request": request,
-            #"brands": brands
+            "request": request
         }
     )
