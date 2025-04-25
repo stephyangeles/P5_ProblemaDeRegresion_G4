@@ -1,6 +1,5 @@
 class Settings:
     def __init__(self):
-        
         self.model = "catboost"  # Model name
         self.model_type = "regression"
         self.model_path = "regression/models/CatBoost.cbm"
