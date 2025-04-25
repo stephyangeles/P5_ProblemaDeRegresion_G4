@@ -20,9 +20,10 @@ python -m venv .venv
 
 
 ### Mac
-b..
-
-s...
+```
+python(3) -m venv .venv
+source .venv/bin/activate
+```
 
 ##Instalar dependencias txt
 
