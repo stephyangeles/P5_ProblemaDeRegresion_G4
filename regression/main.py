@@ -46,10 +46,12 @@ class CarInput(BaseModel):
 # Ruta principal - Renderiza el formulario HTML
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
+    lectura = log.leer_archivo()
     return templates.TemplateResponse(request,
         "index.html", 
         {
             "request": request, 
+            "lectura": lectura,
             "form_data": json.dumps(form_data)
         }
     )
