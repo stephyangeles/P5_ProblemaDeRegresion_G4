@@ -5,6 +5,7 @@ from fastapi.responses import HTMLResponse, JSONResponse, FileResponse
 from fastapi.templating import Jinja2Templates
 from regression.core.config import settings
 import regression.core.lw_log as log
+import regression.core.pkl_log as pkl_log
 #from catboost import CatBoostClassifier, CatBoostRegressor
 import pandas as pd
 from typing import Optional, List
@@ -24,6 +25,7 @@ app = FastAPI(
     )
 
 log.write_log("💹" + settings.proyect_name + " " + settings.version + " started")
+pkl_log.write_log_pkl("💹" + settings.proyect_name + " " + settings.version + " started")
 
 #Servir carpeta static
 app.mount("/static", StaticFiles(directory="regression/static"), name="static")
