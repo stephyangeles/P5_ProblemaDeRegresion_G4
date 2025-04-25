@@ -207,3 +207,103 @@
 [2025-04-25 05:08:34.174678] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
 [2025-04-25 06:21:12.376666] 💹Regression 0.0.1 started
 [2025-04-25 06:21:12.602381] 💹Regression 0.0.1 started
+[2025-04-25 07:00:42.965134] 💹Regression 0.0.1 started
+[2025-04-25 07:00:42.998409] 💹Regression 0.0.1 started
+[2025-04-25 07:01:49.531170] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 07:01:49.533705] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:01:49.559396] 📊 Valores del input_df:
+  brand  model  ...  clean_title    engine
+0   BMW  135 i  ...            1  no_entry
+
+[1 rows x 11 columns]
+[2025-04-25 07:01:49.561816] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 07:05:51.202679] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 07:05:51.205210] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:05:51.220576] 📊 Valores del input_df:
+  brand  model  ...  clean_title    engine
+0   BMW  135 i  ...            1  no_entry
+
+[1 rows x 11 columns]
+[2025-04-25 07:05:51.223025] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 07:05:54.661331] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 07:05:54.663330] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:05:54.685318] 📊 Valores del input_df:
+  brand  model  ...  clean_title    engine
+0   BMW  135 i  ...            1  no_entry
+
+[1 rows x 11 columns]
+[2025-04-25 07:05:54.687451] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 07:06:55.995363] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 07:06:55.997499] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:06:56.017503] 📊 Valores del input_df:
+     brand                    model  ...  clean_title    engine
+0  Bugatti  Veyron 16.4 Grand Sport  ...            1  no_entry
+
+[1 rows x 11 columns]
+[2025-04-25 07:06:56.019824] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 07:08:09.698048] 💹Regression 0.0.1 started
+[2025-04-25 07:08:11.477939] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 07:08:11.480197] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:08:11.502552] 📊 Valores del input_df:
+     brand                    model  ...  clean_title    engine
+0  Bugatti  Veyron 16.4 Grand Sport  ...            1  no_entry
+
+[1 rows x 11 columns]
+[2025-04-25 07:08:11.505102] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 07:11:45.030195] 💹Regression 0.0.1 started
+[2025-04-25 07:12:39.510351] 🔍 Columnas del input_df: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:12:39.512459] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:12:39.536779] 📊 Valores del input_df:
+   milage  model_year            model  ... clean_title mileage  horsepower
+0   12000        2013  488 Spider Base  ...           1     120       120.0
+
+[1 rows x 11 columns]
+[2025-04-25 07:12:39.538920] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 07:18:16.129331] 🔍 Columnas del input_df: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:18:16.131859] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:18:16.155722] 📊 Valores del input_df:
+   milage  model_year            model  ... clean_title mileage  horsepower
+0  120000        2013  488 Spider Base  ...           1    1200       120.0
+
+[1 rows x 11 columns]
+[2025-04-25 07:18:16.158059] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 07:23:04.044063] 🔍 Columnas del input_df: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:23:04.046674] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:23:04.074141] 📊 Valores del input_df:
+   milage  model_year       model  ... clean_title mileage  horsepower
+0  120000        2021  XTS Luxury  ...           0    1200       126.0
+
+[1 rows x 11 columns]
+[2025-04-25 07:23:04.076124] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 07:23:16.932558] 🔍 Columnas del input_df: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:23:16.934556] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:23:16.950818] 📊 Valores del input_df:
+   milage  model_year       model  ... clean_title mileage  horsepower
+0  120000        2021  XTS Luxury  ...           1    1200       126.0
+
+[1 rows x 11 columns]
+[2025-04-25 07:23:16.952962] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 07:23:23.837798] 🔍 Columnas del input_df: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:23:23.840200] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:23:23.861745] 📊 Valores del input_df:
+   milage  model_year       model  ... clean_title mileage  horsepower
+0  120000        2021  XTS Luxury  ...           0    1200       126.0
+
+[1 rows x 11 columns]
+[2025-04-25 07:23:23.863947] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 07:25:36.943260] 🔍 Columnas del input_df: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:25:36.945668] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:25:36.961415] 📊 Valores del input_df:
+   milage  model_year       model  ... clean_title mileage  horsepower
+0  120000        2021  XTS Luxury  ...           0    1200       126.0
+
+[1 rows x 11 columns]
+[2025-04-25 07:25:36.964239] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 07:25:49.902816] 🔍 Columnas del input_df: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:25:49.905348] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:25:49.928380] 📊 Valores del input_df:
+   milage  model_year       model  ... clean_title mileage  horsepower
+0  120000        2021  XTS Luxury  ...           0    1200       126.0
+
+[1 rows x 11 columns]
+[2025-04-25 07:25:49.930332] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}

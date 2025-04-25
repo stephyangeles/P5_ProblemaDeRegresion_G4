@@ -40,8 +40,12 @@ def predict_price(input_data):
     logg.write_log("📊 Valores del input_df:\n" + str(input_df))
     logg.write_log("Parámetros del modelo: " + str(model.get_params()))
 
+
+    for col in ['brand', 'model', 'fuel_type', 'accident']:
+        input_df[col] = input_df[col].astype(str)
+
     # Realizar la predicción
-    prediction = model.predict(input_df)
+    prediction = model.predict(input_df)[0]
     # Asegurarse de que la predicción es un valor único
     if isinstance(prediction, (list, np.ndarray)):
         prediction = prediction[0]
