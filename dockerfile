@@ -53,6 +53,7 @@ RUN python -m pip install --no-cache-dir -r requirements.txt
 # Definir variables de entorno 
 
 ENV LOG_TXT="log.txt"
+ENV LOG_PKL="log.pkl"
 #COPY log.txt /app/${LOG_TXT}
   
 ENV PYTHONPATH=/app
@@ -65,6 +66,8 @@ RUN mkdir -p /var/log
 RUN touch -a ${LOG_TXT}
 RUN chmod 777 ${LOG_TXT}
 
+RUN touch -a ${LOG_PKL}
+RUN chmod 777 ${LOG_PKL}
 
 
 COPY . .
