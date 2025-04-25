@@ -307,3 +307,4 @@
 
 [1 rows x 11 columns]
 [2025-04-25 07:25:49.930332] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 07:50:10.436080] 💹Regression 0.0.1 started
