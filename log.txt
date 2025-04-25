@@ -365,3 +365,19 @@
 
 [1 rows x 11 columns]
 [2025-04-25 10:22:51.949161] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 12:46:41.342386] 🔍 Columnas del input_df: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 12:46:41.378395] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 12:46:41.469736] 📊 Valores del input_df:
+   milage  model_year          model  ... clean_title mileage  horsepower
+0   20000        2016  750 Li xDrive  ...           1     200       100.0
+
+[1 rows x 11 columns]
+[2025-04-25 12:46:41.488905] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 13:20:11.420297] 🔍 Columnas del input_df: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 13:20:11.451155] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 13:20:11.500743] 📊 Valores del input_df:
+   milage  model_year  ... mileage horsepower
+0     200        2014  ...       2      100.0
+
+[1 rows x 11 columns]
+[2025-04-25 13:20:11.529154] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}

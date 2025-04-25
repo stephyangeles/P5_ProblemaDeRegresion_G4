@@ -20,7 +20,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: var(--black);
-  background-image: url('regression/static/img/p5-fondo.jpg'); 
+  background-image: url('/static/img/p5-fondo.jpg'); 
   background-attachment: fixed;
   background-position: center;
   color: var(--white) !important;
