@@ -1,95 +1,93 @@
 # from fastapi import FastAPI, Request
 
-# from fastapi.staticfiles import StaticFiles
-# from fastapi.responses import HTMLResponse, JSONResponse, FileResponse
-# from fastapi.templating import Jinja2Templates
-# from regression.core.config import settings
-# import regression.core.lw_log as log
-
-
-
-# #Crear la app
-# app = FastAPI(
-#     title=settings.proyect_name,
-#     description=settings.description,
-#     version=settings.version)
-
-# log.write_log("💹" + settings.proyect_name + " " + settings.version + " started")
-
-# #Servir carpeta static
-# app.mount("/static", StaticFiles(directory="regression/static"), name="static")
-# #Configurar Jinja2 para las plantillas HTML
-# templates = Jinja2Templates(directory="regression/templates")
-
-
-# @app.get("/", response_class=HTMLResponse)
-# def read_root( request: Request):
-#     try:
-#         lectura_log = log.leer_archivo() 
-#         log.write_log(f"✅ Datos recuperados correctamente")
-#     except Exception as e:
-#         log.write_log(f"❌ Error al recuperar datos {e}")
-#         print(f"❌ Error al recuperar algo {e}")
-#     return templates.TemplateResponse(request,
-#         "index.html",
-#           {
-#             "lectura": lectura_log,
-#             "request": request,
-#             #"brands": brands
-#         }
-#     )
-
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel, Field, validator
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import HTMLResponse, JSONResponse, FileResponse
+from fastapi.templating import Jinja2Templates
+from regression.core.config import settings
+import regression.core.lw_log as log
+#from catboost import CatBoostClassifier, CatBoostRegressor
 import pandas as pd
-import joblib
-from catboost import CatBoostRegressor
+from typing import Optional, List
 
-# Cargar el modelo
-model = CatBoostRegressor()
+import json
+from pydantic import BaseModel
+from regression.predictor import predict_price, load_form_data
 
-model.load_model("models/CatBoostModel.cbm")
 
-FEATURES = ['milage', 'model_year', 'model', 'brand',
-            'engine', 'engine_L', 'fuel_type',
-            'accident', 'clean_title', 'mileage',
-            'horsepower']
+form_data = load_form_data()
 
-CAT_FEATURES = ['brand', 'model', 'fuel_type', 'engine',
-                'accident', 'model_year', 'clean_title']
+#Crear la app
+app = FastAPI(
+    title=settings.proyect_name,
+    description=settings.description,
+    version=settings.version
+    )
 
-# Crear app
-app = FastAPI(title="Car Price Prediction API")
+log.write_log("💹" + settings.proyect_name + " " + settings.version + " started")
 
-# Pydantic input con validaciones
-class CarFeatures(BaseModel):
-    milage: float = Field(..., gt=0)
-    model_year: int = Field(..., ge=1980, le=2025)
-    model: str
+#Servir carpeta static
+app.mount("/static", StaticFiles(directory="regression/static"), name="static")
+#Configurar Jinja2 para las plantillas HTML
+templates = Jinja2Templates(directory="regression/templates")
+# Cargar modelo, scaler y columnas
+# Modelo para la solicitud de predicción
+class CarInput(BaseModel):
     brand: str
-    engine: str
-    engine_L: float = Field(..., gt=0)
+    model: str
+    model_year: int
+    milage: int
     fuel_type: str
+    engine_L: Optional[float] = None
+    horsepower: Optional[float] = None
     accident: str
-    clean_title: str
-    mileage: float = Field(..., gt=0)
-    horsepower: float = Field(..., gt=0)
+    clean_title: int
 
-    @validator('accident', 'clean_title')
-    def check_binary_string(cls, v):
-        if v.lower() not in ['yes', 'no']:
-            raise ValueError("Debe ser 'Yes' o 'No'")
-        return v.title()
 
-@app.get("/")
-def root():
-    return {"message": "Car Price Prediction API. Use POST /predict to get a price estimate."}
+# Ruta principal - Renderiza el formulario HTML
+@app.get("/", response_class=HTMLResponse)
+async def read_root(request: Request):
+    lectura = log.leer_archivo()
+    return templates.TemplateResponse(request,
+        "index.html", 
+        {
+            "request": request, 
+            "lectura": lectura,
+            "form_data": json.dumps(form_data)
+        }
+    )
 
-@app.post("/predict")
-def predict_price(car: CarFeatures):
+# Endpoint para obtener los modelos de una marca específica
+@app.get(settings.api_prefix+"/models/{brand}")
+async def get_models_by_brand(brand: str):
+    if brand in form_data["categories"]["models_by_brand"]:
+        return {"models": form_data["categories"]["models_by_brand"][brand]}
+    return {"models": []}
+
+# Endpoint para la predicción
+@app.post(settings.api_prefix+"/predict")
+async def predict(data: CarInput):
     try:
-        df = pd.DataFrame([car.dict()])[FEATURES]
-        prediction = model.predict(df)
-        return {"predicted_price": round(float(prediction[0]), 2)}
+
+        input_data = pd.DataFrame({
+            'milage': [data.milage],
+            'model_year': [data.model_year],
+            'model': [data.model],
+            'brand': [data.brand],
+            'engine': ['no_entry'],  # Valor por defecto, ya que usamos horsepower y engine_L
+            'engine_L': [data.engine_L if data.engine_L is not None else -1],
+            'fuel_type': [data.fuel_type],
+            'accident': [data.accident],
+            'clean_title': [data.clean_title],
+            'mileage': [data.milage // 100],  # Calculado igual que en el preprocesamiento
+            'horsepower': [data.horsepower if data.horsepower is not None else -1]
+        })
+        # Obtener la predicción
+        price = predict_price(input_data)
+        
+        # Devolver el resultado
+        return {
+            "predicted_price": float(price),
+            "formatted_price": f"${price:,.2f}"
+        }
     except Exception as e:
-        raise HTTPException(status_code=400, detail=str(e))
+        return {"error": str(e)}

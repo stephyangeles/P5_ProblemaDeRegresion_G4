@@ -1,15 +1,309 @@
-[2025-04-24 07:21:49.786851] Regression 0.0.1 started
-[2025-04-24 07:21:49.787945] Regression 0.0.1 started
-[2025-04-24 07:24:03.810818] 💹Regression 0.0.1 started
-[2025-04-24 07:33:43.677675] 💹Regression 0.0.1 started
-[2025-04-24 07:36:03.040898] 💹Regression 0.0.1 started
-[2025-04-24 07:36:03.186481] 💹Regression 0.0.1 started
-[2025-04-24 07:36:03.201640] ✅ Datos recuperados correctamente
-[2025-04-24 07:37:13.484656] 💹Regression 0.0.1 started
-[2025-04-24 07:37:13.658891] ✅ Datos recuperados correctamente
-[2025-04-24 07:37:13.697096] 💹Regression 0.0.1 started
-[2025-04-24 07:38:19.748389] 💹Regression 0.0.1 started
-[2025-04-24 07:38:20.029675] 💹Regression 0.0.1 started
-[2025-04-24 07:38:20.229920] ✅ Datos recuperados correctamente
-[2025-04-24 07:38:39.955010] ✅ Datos recuperados correctamente
-[2025-04-24 07:39:20.128509] ✅ Datos recuperados correctamente
+[2025-04-24 08:11:47.236927] ✅ Datos recuperados correctamente
+[2025-04-24 08:32:26.814368] 💹Regression 0.0.1 started
+[2025-04-24 08:32:26.864059] 💹Regression 0.0.1 started
+[2025-04-24 08:33:44.360314] 💹Regression 0.0.1 started
+[2025-04-24 08:34:08.180758] 💹Regression 0.0.1 started
+[2025-04-24 08:34:21.059015] 💹Regression 0.0.1 started
+[2025-04-24 08:34:40.064309] 💹Regression 0.0.1 started
+[2025-04-24 08:58:44.814822] 💹Regression 0.0.1 started
+[2025-04-24 08:58:44.820208] 💹Regression 0.0.1 started
+[2025-04-24 09:05:00.122740] 💹Regression 0.0.1 started
+[2025-04-24 09:05:00.161695] 💹Regression 0.0.1 started
+[2025-04-24 10:09:54.300292] 💹Regression 0.0.1 started
+[2025-04-24 10:09:54.337562] 💹Regression 0.0.1 started
+[2025-04-24 10:35:42.187968] 💹Regression 0.0.1 started
+[2025-04-24 10:35:42.188242] 💹Regression 0.0.1 started
+[2025-04-24 10:35:42.901852] ✅ Datos recuperados correctamente
+[2025-04-24 10:54:19.299530] 💹Regression 0.0.1 started
+[2025-04-24 10:54:19.299911] 💹Regression 0.0.1 started
+[2025-04-24 10:54:20.064573] ✅ Datos recuperados correctamente
+[2025-04-24 10:54:34.394146] ✅ Datos recuperados correctamente
+[2025-04-24 10:58:42.823538] ✅ Datos recuperados correctamente
+[2025-04-24 10:59:03.348223] ✅ Datos recuperados correctamente
+[2025-04-24 11:00:37.519835] ✅ Datos recuperados correctamente
+[2025-04-24 11:02:28.198436] ✅ Datos recuperados correctamente
+[2025-04-24 11:02:30.604069] ✅ Datos recuperados correctamente
+[2025-04-24 11:05:51.253645] ✅ Datos recuperados correctamente
+[2025-04-24 11:06:12.284097] ✅ Datos recuperados correctamente
+[2025-04-24 11:06:23.073248] ✅ Datos recuperados correctamente
+[2025-04-24 11:07:28.112131] ✅ Datos recuperados correctamente
+[2025-04-24 11:08:07.343050] ✅ Datos recuperados correctamente
+[2025-04-24 11:08:14.131089] ✅ Datos recuperados correctamente
+[2025-04-24 11:08:50.537484] 💹Regression 0.0.1 started
+[2025-04-24 11:08:50.591990] 💹Regression 0.0.1 started
+[2025-04-24 11:08:50.769825] ❌ Error al recuperar datos [Errno 2] No such file or directory: '/regression/models/catboost_best_model.pkl'
+[2025-04-24 11:09:50.943175] 💹Regression 0.0.1 started
+[2025-04-24 11:09:51.048610] 💹Regression 0.0.1 started
+[2025-04-24 11:09:51.445180] ❌ Error al recuperar datos 'CatBoostRegressor' object has no attribute 'feature_count_'
+[2025-04-24 11:11:20.148919] ❌ Error al recuperar datos 'CatBoostRegressor' object has no attribute 'feature_count_'
+[2025-04-24 11:13:23.605522] ❌ Error al recuperar datos 'CatBoostRegressor' object has no attribute 'feature_count_'
+[2025-04-24 11:14:27.130411] ❌ Error al recuperar datos 'CatBoostRegressor' object has no attribute 'feature_count_'
+[2025-04-24 11:14:59.420378] ❌ Error al recuperar datos 'CatBoostRegressor' object has no attribute 'feature_count_'
+[2025-04-24 11:16:00.031632] ❌ Error al recuperar datos 'CatBoostRegressor' object has no attribute 'feature_count_'
+[2025-04-24 11:16:17.503004] ❌ Error al recuperar datos 'CatBoostRegressor' object has no attribute 'feature_count_'
+[2025-04-24 11:17:15.863995] 💹Regression 0.0.1 started
+[2025-04-24 11:17:15.986920] 💹Regression 0.0.1 started
+[2025-04-24 11:18:13.531916] 💹Regression 0.0.1 started
+[2025-04-24 11:18:13.588152] 💹Regression 0.0.1 started
+[2025-04-24 11:18:14.049721] ✅ Datos recuperados correctamente
+[2025-04-24 11:18:26.653886] ✅ Datos recuperados correctamente
+[2025-04-24 11:19:43.358608] 💹Regression 0.0.1 started
+[2025-04-24 11:19:43.739076] 💹Regression 0.0.1 started
+[2025-04-24 11:19:43.848852] ✅ Datos recuperados correctamente
+[2025-04-24 11:19:47.482956] ✅ Datos recuperados correctamente
+[2025-04-24 11:54:17.397645] ✅ Datos recuperados correctamente
+[2025-04-24 11:55:00.030055] 💹Regression 0.0.1 started
+[2025-04-24 11:55:00.125732] 💹Regression 0.0.1 started
+[2025-04-24 11:55:00.789565] ✅ Datos recuperados correctamente
+[2025-04-24 11:56:13.536978] ✅ Datos recuperados correctamente
+[2025-04-24 11:56:27.989064] ✅ Datos recuperados correctamente
+[2025-04-24 11:57:10.595674] ✅ Datos recuperados correctamente
+[2025-04-24 11:57:28.184498] ✅ Datos recuperados correctamente
+[2025-04-24 11:57:54.375318] ✅ Datos recuperados correctamente
+[2025-04-24 11:58:56.112410] ✅ Datos recuperados correctamente
+[2025-04-24 11:59:55.373147] ✅ Datos recuperados correctamente
+[2025-04-24 12:00:46.436361] 💹Regression 0.0.1 started
+[2025-04-24 12:00:46.508507] 💹Regression 0.0.1 started
+[2025-04-24 12:03:43.489918] 💹Regression 0.0.1 started
+[2025-04-24 12:03:43.808843] 💹Regression 0.0.1 started
+[2025-04-24 12:04:58.166108] 💹Regression 0.0.1 started
+[2025-04-24 12:04:58.336019] 💹Regression 0.0.1 started
+[2025-04-24 12:04:58.701048] ✅ Datos recuperados correctamente
+[2025-04-24 12:14:52.826831] 💹Regression 0.0.1 started
+[2025-04-24 12:14:53.156148] ✅ Datos recuperados correctamente
+[2025-04-24 12:14:53.174758] 💹Regression 0.0.1 started
+[2025-04-24 12:15:29.061239] ✅ Datos recuperados correctamente
+[2025-04-24 12:40:38.002430] 💹Regression 0.0.1 started
+[2025-04-24 12:40:38.042241] 💹Regression 0.0.1 started
+[2025-04-24 12:40:38.439193] ✅ Datos recuperados correctamente
+[2025-04-24 12:42:10.528376] 💹Regression 0.0.1 started
+[2025-04-24 12:52:21.706689] ✅ Datos recuperados correctamente
+[2025-04-24 12:53:44.528854] ✅ Datos recuperados correctamente
+[2025-04-24 12:54:40.586972] 💹Regression 0.0.1 started
+[2025-04-24 12:59:23.634775] 💹Regression 0.0.1 started
+[2025-04-24 13:12:10.656292] 💹Regression 0.0.1 started
+[2025-04-24 13:12:10.709199] ✅ Datos recuperados correctamente
+[2025-04-24 13:12:10.709397] ✅ Datos recuperados correctamente
+[2025-04-24 13:12:15.902180] ✅ Datos recuperados correctamente
+[2025-04-24 13:17:15.942689] ✅ Datos recuperados correctamente
+[2025-04-24 13:17:24.931231] ✅ Datos recuperados correctamente
+[2025-04-24 13:17:26.349359] ✅ Datos recuperados correctamente
+[2025-04-24 13:17:29.506907] ✅ Datos recuperados correctamente
+[2025-04-24 13:18:04.523863] ✅ Datos recuperados correctamente
+[2025-04-24 13:18:54.475566] ✅ Datos recuperados correctamente
+[2025-04-24 13:22:07.112514] 💹Regression 0.0.1 started
+[2025-04-24 13:26:34.935499] 💹Regression 0.0.1 started
+[2025-04-24 14:29:20.306192] 💹Regression 0.0.1 started
+[2025-04-24 14:29:20.327645] 💹Regression 0.0.1 started
+[2025-04-24 14:29:20.516658] ✅ Datos recuperados correctamente
+[2025-04-24 14:29:51.951302] 💹Regression 0.0.1 started
+[2025-04-24 14:29:52.114697] ✅ Datos recuperados correctamente
+[2025-04-24 14:29:59.313766] ✅ Datos recuperados correctamente
+[2025-04-24 14:32:03.661161] 💹Regression 0.0.1 started
+[2025-04-24 14:32:33.661908] 💹Regression 0.0.1 started
+[2025-04-24 14:32:33.819059] ✅ Datos recuperados correctamente
+[2025-04-24 14:32:39.198487] ✅ Datos recuperados correctamente
+[2025-04-24 14:34:17.444321] 💹Regression 0.0.1 started
+[2025-04-24 14:34:17.621998] 💹Regression 0.0.1 started
+[2025-04-24 14:34:17.670401] ✅ Datos recuperados correctamente
+[2025-04-24 14:34:22.090257] ✅ Datos recuperados correctamente
+[2025-04-24 14:35:47.904979] ✅ Datos recuperados correctamente
+[2025-04-24 14:40:01.738478] ✅ Datos recuperados correctamente
+[2025-04-24 14:40:43.628311] 💹Regression 0.0.1 started
+[2025-04-24 14:40:43.788276] 💹Regression 0.0.1 started
+[2025-04-24 14:40:43.915449] ✅ Datos recuperados correctamente
+[2025-04-24 14:40:54.980827] ✅ Datos recuperados correctamente
+[2025-04-24 14:44:31.554410] ✅ Datos recuperados correctamente
+[2025-04-24 14:46:42.541881] ✅ Datos recuperados correctamente
+[2025-04-24 14:48:01.431380] 💹Regression 0.0.1 started
+[2025-04-24 14:48:01.521088] 💹Regression 0.0.1 started
+[2025-04-24 14:48:01.681233] ✅ Datos recuperados correctamente
+[2025-04-24 14:48:06.800531] ✅ Datos recuperados correctamente
+[2025-04-24 18:18:17.532499] 💹Regression 0.0.1 started
+[2025-04-24 18:18:17.533904] 💹Regression 0.0.1 started
+[2025-04-24 18:18:17.754698] ✅ Datos recuperados correctamente
+[2025-04-24 18:18:25.648178] ✅ Datos recuperados correctamente
+[2025-04-24 18:32:11.974985] 💹Regression 0.0.1 started
+[2025-04-24 18:32:11.975754] 💹Regression 0.0.1 started
+[2025-04-24 18:33:05.264305] 💹Regression 0.0.1 started
+[2025-04-24 18:33:18.019581] 💹Regression 0.0.1 started
+[2025-04-24 18:35:36.662288] 💹Regression 0.0.1 started
+[2025-04-24 18:36:43.465001] 💹Regression 0.0.1 started
+[2025-04-24 18:36:43.481726] 💹Regression 0.0.1 started
+[2025-04-24 18:41:35.709370] 💹Regression 0.0.1 started
+[2025-04-24 18:41:35.710003] 💹Regression 0.0.1 started
+[2025-04-24 19:40:52.895776] 💹Regression 0.0.1 started
+[2025-04-24 19:40:52.895794] 💹Regression 0.0.1 started
+[2025-04-24 19:55:38.482389] 💹Regression 0.0.1 started
+[2025-04-24 19:55:38.736554] 💹Regression 0.0.1 started
+[2025-04-24 20:05:04.364033] 💹Regression 0.0.1 started
+[2025-04-24 20:05:04.756833] 💹Regression 0.0.1 started
+[2025-04-25 03:11:03.154366] 💹Regression 0.0.1 started
+[2025-04-25 03:11:03.191259] 💹Regression 0.0.1 started
+[2025-04-25 03:13:03.210658] 💹Regression 0.0.1 started
+[2025-04-25 03:15:12.764746] 💹Regression 0.0.1 started
+[2025-04-25 04:13:12.979943] 💹Regression 0.0.1 started
+[2025-04-25 04:29:59.575857] 💹Regression 0.0.1 started
+[2025-04-25 04:32:12.059125] 💹Regression 0.0.1 started
+[2025-04-25 04:37:34.503072] 💹Regression 0.0.1 started
+[2025-04-25 04:40:34.065693] 💹Regression 0.0.1 started
+[2025-04-25 04:41:21.343448] 💹Regression 0.0.1 started
+[2025-04-25 04:42:20.096177] 💹Regression 0.0.1 started
+[2025-04-25 04:42:20.361110] 💹Regression 0.0.1 started
+[2025-04-25 04:44:43.867174] 💹Regression 0.0.1 started
+[2025-04-25 04:46:29.702672] 💹Regression 0.0.1 started
+[2025-04-25 04:48:22.656336] 💹Regression 0.0.1 started
+[2025-04-25 04:48:27.668537] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 04:49:55.964082] 💹Regression 0.0.1 started
+[2025-04-25 04:50:04.152160] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 04:50:04.154167] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, ext_col, fuel_type, accident, int_col, clean_title, mileage, horsepower
+[2025-04-25 04:50:04.178385] 📊 Valores del input_df:
+   brand       model  ...  clean_title    engine
+0  Aston  Bentayga S  ...            1  no_entry
+
+[1 rows x 11 columns]
+[2025-04-25 05:03:45.879330] 💹Regression 0.0.1 started
+[2025-04-25 05:03:52.877847] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 05:03:52.879970] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, ext_col, fuel_type, accident, int_col, clean_title, mileage, horsepower
+[2025-04-25 05:03:52.908420] 📊 Valores del input_df:
+   brand       model  ...  clean_title    engine
+0  Aston  Bentayga S  ...            1  no_entry
+
+[1 rows x 11 columns]
+[2025-04-25 05:05:05.712136] 💹Regression 0.0.1 started
+[2025-04-25 05:05:06.752678] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 05:05:06.755390] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, ext_col, fuel_type, accident, int_col, clean_title, mileage, horsepower
+[2025-04-25 05:05:06.778645] 📊 Valores del input_df:
+   brand       model  ...  clean_title    engine
+0  Aston  Bentayga S  ...            1  no_entry
+
+[1 rows x 11 columns]
+[2025-04-25 05:05:06.780987] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 05:06:48.853632] 💹Regression 0.0.1 started
+[2025-04-25 05:06:51.216951] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 05:06:51.219026] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, ext_col, fuel_type, accident, int_col, clean_title, mileage, horsepower
+[2025-04-25 05:06:51.241963] 📊 Valores del input_df:
+   brand       model  ...  clean_title    engine
+0  Aston  Bentayga S  ...            1  no_entry
+
+[1 rows x 11 columns]
+[2025-04-25 05:06:51.245038] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 05:07:51.955224] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 05:07:51.957396] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, ext_col, fuel_type, accident, int_col, clean_title, mileage, horsepower
+[2025-04-25 05:07:51.972906] 📊 Valores del input_df:
+   brand       model  ...  clean_title    engine
+0  Aston  Bentayga S  ...            1  no_entry
+
+[1 rows x 11 columns]
+[2025-04-25 05:07:51.975360] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 05:08:30.422789] 💹Regression 0.0.1 started
+[2025-04-25 05:08:34.143112] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 05:08:34.145512] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, ext_col, fuel_type, accident, int_col, clean_title, mileage, horsepower
+[2025-04-25 05:08:34.172171] 📊 Valores del input_df:
+   brand       model  ...  clean_title    engine
+0  Aston  Bentayga S  ...            1  no_entry
+
+[1 rows x 11 columns]
+[2025-04-25 05:08:34.174678] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 06:21:12.376666] 💹Regression 0.0.1 started
+[2025-04-25 06:21:12.602381] 💹Regression 0.0.1 started
+[2025-04-25 07:00:42.965134] 💹Regression 0.0.1 started
+[2025-04-25 07:00:42.998409] 💹Regression 0.0.1 started
+[2025-04-25 07:01:49.531170] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 07:01:49.533705] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:01:49.559396] 📊 Valores del input_df:
+  brand  model  ...  clean_title    engine
+0   BMW  135 i  ...            1  no_entry
+
+[1 rows x 11 columns]
+[2025-04-25 07:01:49.561816] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 07:05:51.202679] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 07:05:51.205210] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:05:51.220576] 📊 Valores del input_df:
+  brand  model  ...  clean_title    engine
+0   BMW  135 i  ...            1  no_entry
+
+[1 rows x 11 columns]
+[2025-04-25 07:05:51.223025] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 07:05:54.661331] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 07:05:54.663330] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:05:54.685318] 📊 Valores del input_df:
+  brand  model  ...  clean_title    engine
+0   BMW  135 i  ...            1  no_entry
+
+[1 rows x 11 columns]
+[2025-04-25 07:05:54.687451] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 07:06:55.995363] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 07:06:55.997499] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:06:56.017503] 📊 Valores del input_df:
+     brand                    model  ...  clean_title    engine
+0  Bugatti  Veyron 16.4 Grand Sport  ...            1  no_entry
+
+[1 rows x 11 columns]
+[2025-04-25 07:06:56.019824] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 07:08:09.698048] 💹Regression 0.0.1 started
+[2025-04-25 07:08:11.477939] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 07:08:11.480197] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:08:11.502552] 📊 Valores del input_df:
+     brand                    model  ...  clean_title    engine
+0  Bugatti  Veyron 16.4 Grand Sport  ...            1  no_entry
+
+[1 rows x 11 columns]
+[2025-04-25 07:08:11.505102] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 07:11:45.030195] 💹Regression 0.0.1 started
+[2025-04-25 07:12:39.510351] 🔍 Columnas del input_df: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:12:39.512459] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:12:39.536779] 📊 Valores del input_df:
+   milage  model_year            model  ... clean_title mileage  horsepower
+0   12000        2013  488 Spider Base  ...           1     120       120.0
+
+[1 rows x 11 columns]
+[2025-04-25 07:12:39.538920] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 07:18:16.129331] 🔍 Columnas del input_df: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:18:16.131859] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:18:16.155722] 📊 Valores del input_df:
+   milage  model_year            model  ... clean_title mileage  horsepower
+0  120000        2013  488 Spider Base  ...           1    1200       120.0
+
+[1 rows x 11 columns]
+[2025-04-25 07:18:16.158059] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 07:23:04.044063] 🔍 Columnas del input_df: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:23:04.046674] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:23:04.074141] 📊 Valores del input_df:
+   milage  model_year       model  ... clean_title mileage  horsepower
+0  120000        2021  XTS Luxury  ...           0    1200       126.0
+
+[1 rows x 11 columns]
+[2025-04-25 07:23:04.076124] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 07:23:16.932558] 🔍 Columnas del input_df: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:23:16.934556] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:23:16.950818] 📊 Valores del input_df:
+   milage  model_year       model  ... clean_title mileage  horsepower
+0  120000        2021  XTS Luxury  ...           1    1200       126.0
+
+[1 rows x 11 columns]
+[2025-04-25 07:23:16.952962] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 07:23:23.837798] 🔍 Columnas del input_df: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:23:23.840200] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:23:23.861745] 📊 Valores del input_df:
+   milage  model_year       model  ... clean_title mileage  horsepower
+0  120000        2021  XTS Luxury  ...           0    1200       126.0
+
+[1 rows x 11 columns]
+[2025-04-25 07:23:23.863947] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 07:25:36.943260] 🔍 Columnas del input_df: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:25:36.945668] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:25:36.961415] 📊 Valores del input_df:
+   milage  model_year       model  ... clean_title mileage  horsepower
+0  120000        2021  XTS Luxury  ...           0    1200       126.0
+
+[1 rows x 11 columns]
+[2025-04-25 07:25:36.964239] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 07:25:49.902816] 🔍 Columnas del input_df: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:25:49.905348] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-25 07:25:49.928380] 📊 Valores del input_df:
+   milage  model_year       model  ... clean_title mileage  horsepower
+0  120000        2021  XTS Luxury  ...           0    1200       126.0
+
+[1 rows x 11 columns]
+[2025-04-25 07:25:49.930332] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
