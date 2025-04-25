@@ -4,6 +4,12 @@
 <img src="https://github.com/user-attachments/assets/fc7e8638-a11c-493d-b3cf-a9845c3d02c6" width="300">
 </center>
 
+Collab:
+https://colab.research.google.com/drive/1qSKzDkcqzxyWBpg038GeAQpOfKLDT0Rt?usp=sharing
+
+Despliegue:
+https://p5-regresion-g4.onrender.com
+
 ## Crear y activar EV 
 ### Windows
 
