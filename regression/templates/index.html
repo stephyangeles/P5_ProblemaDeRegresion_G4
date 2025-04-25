@@ -3,24 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Predictor de precios de coches</title>
+    <meta name="description" content="{{ description }}" />
+    <title>{{ title }}</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/style.css">
   </head>
   <body>
-    <h1>CAR</h1>
-
-    <button class="btn" onclick="window.modal_log.showModal();">
-      Ver Log´s
-    </button>
-
-
     <div class="container mt-5">
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <div class="card shadow">
             <div class="card-header bg-primary text-white">
               <h3 class="mb-0">Used Car Price Predictor</h3>
+              <p>Marcas: {{ count_brands }}</p>
+              <button class="btn" onclick="window.modal_log.showModal();">
+                Ver Log´s
+              </button>
+              <a href="/docs" class="btn btn-secondary float-end">Doc api</a>
             </div>
             <div class="card-body">
               <form id="predictionForm">

@@ -49,11 +49,17 @@ class CarInput(BaseModel):
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
     lectura = log.leer_archivo()
+    count_brands = len(form_data["categories"]["brand"])
+    count_models = len(form_data["categories"]["models_by_brand"])
     return templates.TemplateResponse(request,
         "index.html", 
         {
             "request": request, 
             "lectura": lectura,
+            "count_models": count_models,
+            "count_brands": count_brands,
+            "title": settings.proyect_name + ", " + settings.version,
+            "description": settings.description,
             "form_data": json.dumps(form_data)
         }
     )
