@@ -143,3 +143,65 @@
 [2025-04-25 03:13:03.210658] 💹Regression 0.0.1 started
 [2025-04-25 03:15:12.764746] 💹Regression 0.0.1 started
 [2025-04-25 04:13:12.979943] 💹Regression 0.0.1 started
+[2025-04-25 04:29:59.575857] 💹Regression 0.0.1 started
+[2025-04-25 04:32:12.059125] 💹Regression 0.0.1 started
+[2025-04-25 04:37:34.503072] 💹Regression 0.0.1 started
+[2025-04-25 04:40:34.065693] 💹Regression 0.0.1 started
+[2025-04-25 04:41:21.343448] 💹Regression 0.0.1 started
+[2025-04-25 04:42:20.096177] 💹Regression 0.0.1 started
+[2025-04-25 04:42:20.361110] 💹Regression 0.0.1 started
+[2025-04-25 04:44:43.867174] 💹Regression 0.0.1 started
+[2025-04-25 04:46:29.702672] 💹Regression 0.0.1 started
+[2025-04-25 04:48:22.656336] 💹Regression 0.0.1 started
+[2025-04-25 04:48:27.668537] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 04:49:55.964082] 💹Regression 0.0.1 started
+[2025-04-25 04:50:04.152160] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 04:50:04.154167] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, ext_col, fuel_type, accident, int_col, clean_title, mileage, horsepower
+[2025-04-25 04:50:04.178385] 📊 Valores del input_df:
+   brand       model  ...  clean_title    engine
+0  Aston  Bentayga S  ...            1  no_entry
+
+[1 rows x 11 columns]
+[2025-04-25 05:03:45.879330] 💹Regression 0.0.1 started
+[2025-04-25 05:03:52.877847] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 05:03:52.879970] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, ext_col, fuel_type, accident, int_col, clean_title, mileage, horsepower
+[2025-04-25 05:03:52.908420] 📊 Valores del input_df:
+   brand       model  ...  clean_title    engine
+0  Aston  Bentayga S  ...            1  no_entry
+
+[1 rows x 11 columns]
+[2025-04-25 05:05:05.712136] 💹Regression 0.0.1 started
+[2025-04-25 05:05:06.752678] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 05:05:06.755390] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, ext_col, fuel_type, accident, int_col, clean_title, mileage, horsepower
+[2025-04-25 05:05:06.778645] 📊 Valores del input_df:
+   brand       model  ...  clean_title    engine
+0  Aston  Bentayga S  ...            1  no_entry
+
+[1 rows x 11 columns]
+[2025-04-25 05:05:06.780987] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 05:06:48.853632] 💹Regression 0.0.1 started
+[2025-04-25 05:06:51.216951] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 05:06:51.219026] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, ext_col, fuel_type, accident, int_col, clean_title, mileage, horsepower
+[2025-04-25 05:06:51.241963] 📊 Valores del input_df:
+   brand       model  ...  clean_title    engine
+0  Aston  Bentayga S  ...            1  no_entry
+
+[1 rows x 11 columns]
+[2025-04-25 05:06:51.245038] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 05:07:51.955224] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 05:07:51.957396] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, ext_col, fuel_type, accident, int_col, clean_title, mileage, horsepower
+[2025-04-25 05:07:51.972906] 📊 Valores del input_df:
+   brand       model  ...  clean_title    engine
+0  Aston  Bentayga S  ...            1  no_entry
+
+[1 rows x 11 columns]
+[2025-04-25 05:07:51.975360] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-25 05:08:30.422789] 💹Regression 0.0.1 started
+[2025-04-25 05:08:34.143112] 🔍 Columnas del input_df: brand, model, model_year, milage, mileage, fuel_type, engine_L, horsepower, accident, clean_title, engine
+[2025-04-25 05:08:34.145512] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, ext_col, fuel_type, accident, int_col, clean_title, mileage, horsepower
+[2025-04-25 05:08:34.172171] 📊 Valores del input_df:
+   brand       model  ...  clean_title    engine
+0  Aston  Bentayga S  ...            1  no_entry
+
+[1 rows x 11 columns]
+[2025-04-25 05:08:34.174678] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}

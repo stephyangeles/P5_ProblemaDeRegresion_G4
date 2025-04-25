@@ -3,6 +3,7 @@ import os
 import pandas as pd
 import numpy as np
 from regression.core.config import settings
+import regression.core.lw_log as logg
 from catboost import CatBoostRegressor
 # Rutas a los archivos
 MODEL_PATH = settings.model_path
@@ -33,7 +34,11 @@ def predict_price(input_data):
         float: Precio predicho
     """
     model = load_model()
-    input_df = pd.DataFrame([input_data])
+    input_df = pd.DataFrame(input_data)
+    logg.write_log("🔍 Columnas del input_df: " + ", ".join(input_df.columns.tolist()))
+    logg.write_log("📦 Columnas que espera el modelo: " + ", ".join(model.feature_names_))
+    logg.write_log("📊 Valores del input_df:\n" + str(input_df))
+    logg.write_log("Parámetros del modelo: " + str(model.get_params()))
 
     # Realizar la predicción
     prediction = model.predict(input_df)

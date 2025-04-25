@@ -65,8 +65,20 @@ async def get_models_by_brand(brand: str):
 @app.post(settings.api_prefix+"/predict")
 async def predict(data: CarInput):
     try:
-        input_data = data.dict()
-        
+        #input_data = data.dict()
+        input_data = pd.DataFrame({
+            'brand': [data.brand],
+            'model': [data.model],
+            'model_year': [data.model_year],
+            'milage': [data.milage],
+            'mileage': [data.milage // 100],  # Calculado igual que en el preprocesamiento
+            'fuel_type': [data.fuel_type],
+            'engine_L': [data.engine_L if data.engine_L is not None else -1],
+            'horsepower': [data.horsepower if data.horsepower is not None else -1],
+            'accident': [data.accident],
+            'clean_title': [data.clean_title],
+            'engine': ['no_entry']  # Valor por defecto, ya que usamos horsepower y engine_L
+        })
         # Obtener la predicción
         price = predict_price(input_data)
         
