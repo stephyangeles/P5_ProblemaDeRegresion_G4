@@ -5,10 +5,10 @@ from fastapi.responses import HTMLResponse, JSONResponse, FileResponse
 from fastapi.templating import Jinja2Templates
 from regression.core.config import settings
 import regression.core.lw_log as log
-from catboost import CatBoostClassifier, CatBoostRegressor
+#from catboost import CatBoostClassifier, CatBoostRegressor
 import pandas as pd
 from typing import Optional, List
-import numpy as np
+
 import json
 from pydantic import BaseModel
 from regression.predictor import predict_price, load_form_data
@@ -20,7 +20,8 @@ form_data = load_form_data()
 app = FastAPI(
     title=settings.proyect_name,
     description=settings.description,
-    version=settings.version)
+    version=settings.version
+    )
 
 log.write_log("💹" + settings.proyect_name + " " + settings.version + " started")
 
@@ -30,7 +31,7 @@ app.mount("/static", StaticFiles(directory="regression/static"), name="static")
 templates = Jinja2Templates(directory="regression/templates")
 # Cargar modelo, scaler y columnas
 # Modelo para la solicitud de predicción
-class PredictionRequest(BaseModel):
+class CarInput(BaseModel):
     brand: str
     model: str
     model_year: int
@@ -62,22 +63,9 @@ async def get_models_by_brand(brand: str):
 
 # Endpoint para la predicción
 @app.post(settings.api_prefix+"/predict")
-async def predict(data: PredictionRequest):
+async def predict(data: CarInput):
     try:
-        # Crear un DataFrame con los datos de entrada
-        input_data = pd.DataFrame({
-            'brand': [data.brand],
-            'model': [data.model],
-            'model_year': [data.model_year],
-            'milage': [data.milage],
-            'mileage': [data.milage // 100],  # Calculado igual que en el preprocesamiento
-            'fuel_type': [data.fuel_type],
-            'engine_L': [data.engine_L if data.engine_L is not None else -1],
-            'horsepower': [data.horsepower if data.horsepower is not None else -1],
-            'accident': [data.accident],
-            'clean_title': [data.clean_title],
-            'engine': ['no_entry']  # Valor por defecto, ya que usamos horsepower y engine_L
-        })
+        input_data = data.dict()
         
         # Obtener la predicción
         price = predict_price(input_data)

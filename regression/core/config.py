@@ -3,7 +3,7 @@ class Settings:
         
         self.model = "catboost"  # Model name
         self.model_type = "regression"
-        self.model_path = "regression/models/CatBoost.pkl"
+        self.model_path = "regression/models/CatBoost.cbm"
         self.data_path = "regression/data/form_data.pkl"
         self.proyect_name = "Regression"
         self.version = "0.0.1"
