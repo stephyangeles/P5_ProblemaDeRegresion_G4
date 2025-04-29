@@ -9,10 +9,6 @@ from catboost import CatBoostRegressor
 MODEL_PATH = settings.model_path
 FORM_DATA_PATH = settings.data_path
 
-# Rutas a los archivos
-MODEL_PATH = settings.model_path
-FORM_DATA_PATH = settings.data_path
-
 def load_model():
     model = CatBoostRegressor()
     return model.load_model(MODEL_PATH)

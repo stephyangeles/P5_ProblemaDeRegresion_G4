@@ -6,7 +6,7 @@ from fastapi.templating import Jinja2Templates
 from regression.core.config import settings
 import regression.core.lw_log as log
 import regression.core.pkl_log as pkl_log
-#from catboost import CatBoostClassifier, CatBoostRegressor
+
 import pandas as pd
 from typing import Optional, List
 
