@@ -396,3 +396,43 @@
 [2025-04-25 14:56:43.078008] 💹Regression 0.0.1 started
 [2025-04-25 14:58:40.606838] 💹Regression 0.0.1 started
 [2025-04-25 14:59:07.469211] 💹Regression 0.0.1 started
+[2025-04-28 09:52:05.653009] 💹Regression 0.0.1 started
+[2025-04-28 09:52:05.656437] 💹Regression 0.0.1 started
+[2025-04-28 09:57:09.662217] 💹Regression 0.0.1 started
+[2025-04-28 10:00:45.794714] 💹Regression 0.0.1 started
+[2025-04-28 10:09:09.192719] 💹Regression 0.0.1 started
+[2025-04-28 10:11:55.593640] 💹Regression 0.0.1 started
+[2025-04-28 10:12:21.851514] 💹Regression 0.0.1 started
+[2025-04-28 10:14:25.114508] 💹Regression 0.0.1 started
+[2025-04-28 10:15:50.906048] 💹Regression 0.0.1 started
+[2025-04-28 10:20:01.166701] 💹Regression 0.0.1 started
+[2025-04-29 06:29:31.742956] 💹Regression 0.0.1 started
+[2025-04-29 06:29:31.743118] 💹Regression 0.0.1 started
+[2025-04-29 06:34:49.293657] 💹Regression 0.0.1 started
+[2025-04-29 06:36:08.129102] 💹Regression 0.0.1 started
+[2025-04-29 06:43:19.859990] 💹Regression 0.0.1 started
+[2025-04-29 06:43:19.872943] 💹Regression 0.0.1 started
+[2025-04-29 06:44:07.677338] 🔍 Columnas del input_df: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-29 06:44:07.680486] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-29 06:44:07.708179] 📊 Valores del input_df:
+   milage  model_year     model  ... clean_title mileage  horsepower
+0  100000        2014  Civic EX  ...           1    1000       100.0
+
+[1 rows x 11 columns]
+[2025-04-29 06:44:07.710524] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-29 06:44:17.453233] 🔍 Columnas del input_df: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-29 06:44:17.456205] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-29 06:44:17.480616] 📊 Valores del input_df:
+   milage  model_year     model  ... clean_title mileage  horsepower
+0  100000        2014  Civic EX  ...           0    1000       100.0
+
+[1 rows x 11 columns]
+[2025-04-29 06:44:17.484263] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-29 06:44:24.032356] 🔍 Columnas del input_df: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-29 06:44:24.035586] 📦 Columnas que espera el modelo: milage, model_year, model, brand, engine, engine_L, fuel_type, accident, clean_title, mileage, horsepower
+[2025-04-29 06:44:24.057912] 📊 Valores del input_df:
+   milage  model_year     model  ... clean_title mileage  horsepower
+0  100000        2014  Civic EX  ...           0    1000       100.0
+
+[1 rows x 11 columns]
+[2025-04-29 06:44:24.060856] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
