@@ -3,6 +3,45 @@
 <center>
 <img src="https://github.com/user-attachments/assets/fc7e8638-a11c-493d-b3cf-a9845c3d02c6" width="300">
 </center>
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/mikewig">
+        <img src="https://avatars.githubusercontent.com/u/198570893?v=4" width="100px;" alt="Maikel López"/>
+        <br />
+        <sub><b>Michael Lópe</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/andalons">
+        <img src="https://avatars.githubusercontent.com/u/81816962?v=4" width="100px;" alt="Andrea Alonso"/>
+        <br />
+        <sub><b>Andrea Alonso</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/stephyangeles">
+        <img src="https://avatars.githubusercontent.com/u/150821141?v=4" width="100px;" alt="Stephany Angeles"/>
+        <br />
+        <sub><b>Stephany Angeles</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/fintihlupik">
+        <img src="https://avatars.githubusercontent.com/u/53350261?v=4" width="100px;" alt="Polina"/>
+        <br />
+        <sub><b>Polina</b></sub>
+      </a>
+    </td>
+     <td align="center">
+      <a href="https://github.com/juancmacias">
+        <img src="https://avatars.githubusercontent.com/u/53483587?v=4" width="100px;" alt="Juan Carlos"/>
+        <br />
+        <sub><b>Juan Carlos Macías</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 Collab:
 https://colab.research.google.com/drive/1qSKzDkcqzxyWBpg038GeAQpOfKLDT0Rt?usp=sharing
