@@ -384,15 +384,12 @@
 [2025-04-25 13:35:19.162762] 💹Regression 0.0.1 started
 [2025-04-25 13:35:19.162791] 💹Regression 0.0.1 started
 [2025-04-25 13:38:28.486553] 💹Regression 0.0.1 started
-<<<<<<< HEAD
 [2025-04-25 14:52:19.512611] 💹Regression 0.0.1 started
 [2025-04-25 14:52:19.521801] 💹Regression 0.0.1 started
-=======
 [2025-04-25 14:22:53.189497] 💹Regression 0.0.1 started
 [2025-04-25 14:22:53.217227] 💹Regression 0.0.1 started
 [2025-04-25 14:24:57.572036] 💹Regression 0.0.1 started
 [2025-04-25 14:24:58.078580] 💹Regression 0.0.1 started
->>>>>>> 38cb5b783ebad5c8091681696113dba05bd26a82
 [2025-04-25 14:56:43.078008] 💹Regression 0.0.1 started
 [2025-04-25 14:58:40.606838] 💹Regression 0.0.1 started
 [2025-04-25 14:59:07.469211] 💹Regression 0.0.1 started
@@ -436,3 +433,5 @@
 
 [1 rows x 11 columns]
 [2025-04-29 06:44:24.060856] Parámetros del modelo: {'random_strength': 1, 'border_count': 254, 'od_wait': 50, 'verbose': 100, 'iterations': 500, 'bagging_temperature': 1, 'loss_function': 'RMSE', 'l2_leaf_reg': 3, 'depth': 8, 'random_seed': 42, 'learning_rate': 0.03}
+[2025-04-29 06:52:27.142159] 💹Regression 0.0.1 started
+[2025-04-29 06:52:27.144075] 💹Regression 0.0.1 started
